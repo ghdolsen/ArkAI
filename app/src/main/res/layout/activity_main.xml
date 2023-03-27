@@ -19,19 +19,81 @@
             android:text="@string/app_name"
             android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
             app:drawableStartCompat="@drawable/ic_menu_icon" />
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_gravity="bottom">
+    </FrameLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ghdolsen.arkai.ui.main.RibbonActionButton
+            android:id="@+id/ic_config"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/ribbon_margin"
+            android:layout_weight="0.20"
+            android:contentDescription="@string/config_button_description"
+            app:srcCompat="@drawable/ic_config" />
+
+        <com.ghdolsen.arkai.ui.main.RibbonActionButton
+            android:id="@+id/ic_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/ribbon_margin"
+            android:layout_weight="0.20"
+            android:contentDescription="@string/key_button_description"
+            android:src="@drawable/ic_key" />
+
+        <com.ghdolsen.arkai.ui.main.RibbonActionButton
+            android:id="@+id/ic_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/ribbon_margin"
+            android:layout_weight="0.20"
+            android:contentDescription="@string/chat_button_description"
+            android:src="@drawable/ic_chat" />
+
+        <com.ghdolsen.arkai.ui.main.RibbonActionButton
+            android:id="@+id/ic_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/ribbon_margin"
+            android:layout_weight="0.20"
+            android:contentDescription="@string/back_button_description"
+            android:src="@drawable/ic_back" />
+
+        <com.ghdolsen.arkai.ui.main.RibbonActionButton
+            android:id="@+id/ic_go"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/ribbon_margin"
+            android:layout_weight="0.20"
+            android:contentDescription="@string/go_button_description"
+            android:src="@drawable/ic_go" />
+
+    </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -41,8 +103,6 @@
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
         android:contentDescription="@string/fab_button_desc"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
-
-    </FrameLayout>
+        android:src="@drawable/ic_redo" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
