@@ -2,4 +2,10 @@
     <string name="app_name">ArkAI</string>
     <string name="save_button_text">Save</string>
     <string name="fab_button_desc">fab</string>
+    <string name="config_button_description">Configuration</string>
+    <string name="key_button_description">Key</string>
+    <string name="chat_button_description">Chat</string>
+    <string name="back_button_description">Back</string>
+    <string name="go_button_description">Go</string>
+    <string name="redo_button_description">Redo</string>
 </resources>
