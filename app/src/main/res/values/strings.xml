@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">ArkAI</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="save_button_text">Save</string>
+    <string name="fab_button_desc">fab</string>
 </resources>

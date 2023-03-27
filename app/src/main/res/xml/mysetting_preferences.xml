@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Settings">
+
+    <PreferenceCategory
+        android:title="General Settings">
+
+    <EditTextPreference
+        android:key="user_id"
+        android:title="User ID"
+        android:summary="Enter your User ID"
+        android:defaultValue=""/>
+
+        <EditTextPreference
+            android:key="user_password"
+            android:title="Password"
+            android:summary="Enter your password"
+            android:inputType="textPassword" />
+
+        <Preference
+            android:key="save_button"
+            android:summary="Click to save settings"
+            android:title="Save Button"
+            android:widgetLayout="@layout/save_button_layout" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
